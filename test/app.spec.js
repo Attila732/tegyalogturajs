@@ -11,6 +11,11 @@ describe('A getUnsuccessPercent tesztje', () => {
         let actual = getUnsuccessPercent(55, 17);
         expect(actual).toBe(30.909090909090907);
     });
+    it('Input 1, a, elvárt NaN', () => {    
+        let actual = getUnsuccessPercent(1, a);
+        expect(actual).toBe(false);
+    });
+    
 
      
 });
